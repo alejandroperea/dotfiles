@@ -3,7 +3,7 @@ MY DOTFILES
 Clone onto your laptop:
 
 ```
-> git clone git://github.com/davidruizrodri/dotfiles.git ~/.dotfiles
+> git clone git://github.com/alejandroperea/dotfiles.git ~/.dotfiles
 ```
 
 You can install them with `make`:
@@ -70,4 +70,4 @@ The idea is to keep each set of dotfiles modular, so if you need to add or remov
 
 CREDITS
 -------
-Many thanks to Juan Hernández and Fran Casas to share their Makefile configuration in their dotfiles (https://github.com/jhbabon/dotfiles and https://github.com/franciscoj/dot-files). It has been really useful to make my own configuration! Thanks guys!
+Many thanks to David Ruiz, Juan Hernández and Fran Casas to share their Makefile configuration in their dotfiles (https://github.com/davidruizrodri/dotfiles, https://github.com/jhbabon/dotfiles and https://github.com/franciscoj/dot-files). It has been really useful to make my own configuration! Thanks guys!
