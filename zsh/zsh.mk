@@ -8,7 +8,7 @@ ifdef ZSH_SHELL
 	OH_MY_ZSH_DIR := $(HOME)/.oh-my-zsh
 
 	ZSH_OH_MY_ZSH_REPO           := https://github.com/robbyrussell/oh-my-zsh.git
-	SPACESHIP_PROMPT_REPO        := https://github.com/denysdovhan/spaceship-prompt.git
+	AGNOSTER_PROMPT_REPO         := https://github.com/agnoster/agnoster-zsh-theme.git
 	ZSH_SYNTAX_HIGHLIGHTING_REPO := https://github.com/zsh-users/zsh-syntax-highlighting.git
 	ZSH_AUTOSUGGESTIONS_REPO     := https://github.com/zsh-users/zsh-autosuggestions.git
 	ZSH_CUSTOM_DIR               := $(OH_MY_ZSH_DIR)/custom
@@ -21,8 +21,8 @@ ifdef ZSH_SHELL
 
   zsh: dotfile_install_zsh
 		curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-		$(CLONE) $(SPACESHIP_PROMPT_REPO) $(ZSH_THEMES_DIR)/spaceship-prompt
-		$(LINK)  $(ZSH_THEMES_DIR)/spaceship-prompt/spaceship.zsh-theme $(ZSH_THEMES_DIR)/spaceship.zsh-theme
+		$(CLONE) $(AGNOSTER_PROMPT_REPO) $(ZSH_THEMES_DIR)/agnoster-prompt
+		$(LINK)  $(ZSH_THEMES_DIR)/agnoster-prompt/agnoster.zsh-theme $(ZSH_THEMES_DIR)/agnoster.zsh-theme
 		$(CLONE) $(ZSH_SYNTAX_HIGHLIGHTING_REPO) $(ZSH_PLUGINS_DIR)/zsh-syntax-highlighting
 		$(CLONE) $(ZSH_AUTOSUGGESTIONS_REPO) $(ZSH_PLUGINS_DIR)/zsh-autosuggestions
 		$(LINK) $(ZSH_SRC_DIR)/custom/aliases.zsh $(ZSH_CUSTOM_DIR)/aliases.zsh
